@@ -117,7 +117,9 @@ if (!Array.prototype.last){
 						if(checkLog()){
 							var text = '<h3>PDF Only</h3>'
 							          +'<label style="margin:8px 10px 8px 180px; font-size:16px;" for="acrs_file">Submit abstract</label><input id="acrs_file" type="file">'
-							          +'<br><center style="margin-top:15px;"><button class="acrs_btn" onclick="updateObj()">Submit</button></center>';
+							          +'<br><center style="margin-top:15px;"><button class="acrs_btn" onclick="updateObj()">Submit</button></center>'
+									  +'<a ref="https://drive.google.com/open?id=0Bx4UNv33IyUNamFrVlRUTWNsSWc">Abstract_template<a>'
+							;
 							var pdfFile = Parse.Object.extend("File");
 							var query = new Parse.Query(pdfFile);
 							var current = Parse.User.current();
