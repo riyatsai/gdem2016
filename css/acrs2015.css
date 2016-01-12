@@ -185,8 +185,7 @@ header{
 	z-index:100000;
 	width:130px;
 	height:60px;
-	position:fixed;
-	left:1120px;
+	float:right;
 	top:40px;
 	background:url('../img/ceos_logo.png');
 	background-repeat: no-repeat; 
