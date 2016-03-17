@@ -74,10 +74,12 @@ if (!Array.prototype.last){
 						else{
 							return  '<h1>Sign up</h1>'
 							       +'<div class="acrs_login">'
+							          +'<form id="msg" name="msg" method="post" action="sendEmail.php">'
 							          +'<label style="margin-left:42px;" for="acrs_username">User</label><input id="acrs_username" type="text">'
 							          +'<label for="acrs_password">Password</label><input id="acrs_password" type="password">'
 							          +'<label style="padding-left:22px;" for="acrs_email">E-mail</label><input id="acrs_email" type="email">'
 							          +'<button style="margin:45px 0 0 105px;" class="acrs_btn" onclick="signup()">submit</button>'
+							          +'</form>'
 							       +'</div>';
 						}
 					},
@@ -223,6 +225,7 @@ function signup(){
    	  error: function(data,error){
    		  alert("Signup fail, REMEMBER one email account can ONLY signup ONCE");
    	  }
+
      }); 
 }
 function update(){
@@ -286,3 +289,5 @@ function deleteObj(objId){
 		}
 	});
 }
+
+
